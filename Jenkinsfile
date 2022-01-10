@@ -23,6 +23,7 @@ pipeline {
                 always {
                     junit 'target/surefire-reports/*.xml'
                 }
+                snDevOpsChange()
             }
         }
         stage('Deploy') { 
